@@ -1,11 +1,8 @@
 "use strict";
 const findIntersection = (strArr) => {
-    // Remove space from inputs
-    const list1 = strArr[0].replace(/\s/g, '');
-    const list2 = strArr[1].replace(/\s/g, '');
     // Make Arrays from list
-    const list1Array = list1.split(',');
-    const list2Array = list2.split(',');
+    const list1Array = list1.split(', ');
+    const list2Array = list2.split(', ');
     // Declare Target
     const finalArray = [];
     // Make Comparisons
@@ -14,13 +11,8 @@ const findIntersection = (strArr) => {
             finalArray.push(item);
         }
     });
-    // Return response
-    if (finalArray.length > 0) {
-        return finalArray.toString();
-    }
-    else {
-        return false;
-    }
+    
+    return (finalArray.length > 0) ? finalArray.toString() : false;
 };
 // First test
 console.log(findIntersection(["1, 3, 4, 7, 13", "1, 2, 4, 13, 15"]));

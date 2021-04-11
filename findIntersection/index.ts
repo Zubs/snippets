@@ -1,12 +1,8 @@
 const findIntersection = (strArr: [string, string]): string | false => {
 	
-	// Remove space from inputs
-	const list1: string = strArr[0].replace(/\s/g, '');
-	const list2: string = strArr[1].replace(/\s/g, '');
-
 	// Make Arrays from list
-	const list1Array: string[] = list1.split(',');
-	const list2Array: string[] = list2.split(',');
+	const list1Array: string[] = list1.split(', ');
+	const list2Array: string[] = list2.split(', ');
 
 	// Declare Target
 	const finalArray: string[] = [];
@@ -19,11 +15,7 @@ const findIntersection = (strArr: [string, string]): string | false => {
 	});
 
 	// Return response
-	if (finalArray.length > 0) {
-		return finalArray.toString();
-	} else {
-		return false;
-	}
+	return (finalArray.length > 0) ? finalArray.toString() : false;
 };
 
 // First test

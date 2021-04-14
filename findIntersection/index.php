@@ -2,6 +2,7 @@
 
 	function findIntersection($input) {
 		$input1 = $input[0];
+		$input2 = $input[1];
 	};
 
 	findIntersection(["1, 3, 4, 7, 13", "1, 2, 4, 13, 15"]);

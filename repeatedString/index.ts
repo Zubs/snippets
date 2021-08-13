@@ -1,26 +1,25 @@
 function repeatedString(s: string, n: number): number {
 
-    let letters = s.split('')
-    let newString: string[] = []
     let count: number = 0
 
-    let length = letters.length
+    let letters = s.split('')
 
-    for (let i = 0; i < n; i++) {
-        if (i < length) {
-            newString.push(letters[i])
-        } else {
-            let index = i % 3
-            newString.push(letters[index])
-        }
-    }
-
-    newString.forEach((letter) => {
+    letters.forEach((letter) => {
         if (letter === 'a') {
             count++
         }
     })
-    
+
+    let times = Math.floor(n / letters.length)
+    count = count * times
+
+    let rem = n % letters.length
+    for (let i = 0; i < rem; i++) {
+        if (letters[i] === 'a') {
+            count++
+        }
+    }
+
     return count
 }
 

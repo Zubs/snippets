@@ -1,3 +1,7 @@
+/**
+ * Move every letter in the given string by 13 positions in the alphabets.
+ * @param str String to be rearranged
+ */
 function rot13(str: string): string {
 
     const alpha = Array.from(Array(26)).map((e, i) => i + 65)

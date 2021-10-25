@@ -1,28 +1,29 @@
 const getOccurence = (array: number[], value: number): number => {
-	let count: number = 0;
+
+	let count: number = 0
+
 	array.forEach((item) => {
-		if (item === value) {
-			count++;
-		}
-	});
-
-	return count;
-};
-
-const LonelyInt = (input: number[]): number => {
-	let answer: number = 0;
-	
-	input.forEach((item) => {
-		if (getOccurence(input, item) === 1) {
-			answer = item;
-		}
+		if (item === value) count++
 	})
 
-	return answer;
-};
+	return count
+}
 
-console.log(LonelyInt([1, 1, 2]));
+/**
+ * Returns the element that exists just once.
+ * @param input Array of numbers to be checked.
+ */
+const LonelyInt = (input: number[]): number => {
 
-console.log(LonelyInt([0, 0, 1, 2, 1]));
+	let answer: number = 0
+	
+	input.forEach((item) => {
+		if (getOccurence(input, item) === 1) answer = item
+	})
 
-console.log(LonelyInt([1]));
+	return answer
+}
+
+console.log(LonelyInt([1, 1, 2]))
+console.log(LonelyInt([0, 0, 1, 2, 1]))
+console.log(LonelyInt([1]))

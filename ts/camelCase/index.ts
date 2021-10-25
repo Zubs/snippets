@@ -1,11 +1,11 @@
-/*
- * Complete the 'camelcase' function below.
- *
- * The function is expected to return an INTEGER.
- * The function accepts STRING s as parameter.
+/**
+ * Returns number of words in a camelCased string.
+ * @param s String to be examined.
  */
 function camelcase(s: string): number {
+
     let count = 0
+
     s.split('').forEach((letter, index) => {
         if (index === 0) {
             count++
@@ -15,6 +15,7 @@ function camelcase(s: string): number {
             }
         }
     })
+
     return count
 }
 

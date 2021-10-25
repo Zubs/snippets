@@ -1,3 +1,7 @@
+/**
+ * Determine how many people have liked the ad by the end of a given day, beginning with launch day as day 1.
+ * @param n The day number to report.
+ */
 function viralAdvertising (n: number): number {
 
     let shared = 5

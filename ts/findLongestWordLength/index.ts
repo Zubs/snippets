@@ -1,3 +1,8 @@
+/**
+ * Return the length of the longest word in the sentence
+ * @param str Sentence to be examined
+ * @return int Length of the longest word
+ */
 function findLongestWordLength (str: string): number {
 
     const words = str.split(' ')

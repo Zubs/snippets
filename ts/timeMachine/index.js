@@ -1,4 +1,9 @@
 "use strict";
+/**
+ * Get the 256th day of every year
+ * @param year
+ * @return { string } The exact date of the year
+ */
 function timeInterval(year) {
     let days = 0;
     let daysTarget = 256;

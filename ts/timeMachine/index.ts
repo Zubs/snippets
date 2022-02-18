@@ -1,3 +1,8 @@
+/**
+ * Get the 256th day of every year
+ * @param year
+ * @return { string } The exact date of the year
+ */
 function timeInterval (year: number): string {
 
     let days = 0;

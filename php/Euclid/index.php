@@ -7,7 +7,6 @@
 function get_GCD ($n1, $n2): int {
     $gcd = 0;
     $c_divisor = $n1 < $n2 ? $n1 : $n2;
-    $
     $remainder = 1;
 
     while ($remainder) {

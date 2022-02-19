@@ -21,7 +21,7 @@ const timeInterval = (year) => {
     let result;
     let time = new Time(false);
 
-    if ((year % 400 === 0) || (year % 4 === 0 && !(year % 100 === 0)) || !(year >= 1917)) {
+    if ((year % 400 === 0) || (year % 4 === 0 && !(year % 100 === 0)) || !(year >= 1700 && year <= 1917)) {
         time = new Time(true);
     }
 

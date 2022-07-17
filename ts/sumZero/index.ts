@@ -1,6 +1,6 @@
 function sumZero (numbers: number[]): [number, number] | undefined {
 
-    let result: [number, number];
+    let result: [number, number] | undefined = undefined;
 
     numbers.forEach((number) => {
         if (!result && numbers.includes(0 - number)) {
@@ -8,7 +8,7 @@ function sumZero (numbers: number[]): [number, number] | undefined {
         }
     })
 
-    return result ?? undefined;
+    return result;
 }
 
 console.log(sumZero([-4, -3, -2, -1, 0, 1, 2, 3, 10]));

@@ -1,4 +1,3 @@
-"use strict";
 function checkCashRegister(price, cash, cid) {
     var mycid = cid;
     var change = cash - price;

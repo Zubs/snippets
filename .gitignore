@@ -1,3 +1,4 @@
-.idea/
+.idea
+.idea/php.xml
 *.lock
 node_modules/
